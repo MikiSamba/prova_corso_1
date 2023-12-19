@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
   root 'pages#home'
-
-
-
+  #richiesta tipo get alla pagina /about, passa per il controller pages metodo about
+  get 'about', to: 'pages#about'
 
 end
 
